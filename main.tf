@@ -22,13 +22,14 @@ resource "aws_lb" "example" {
 resource "aws_security_group" "example" {
   name_prefix = "example"
 }
+/*
 
 resource "aws_subnet" "example" {
   cidr_block = "10.0.0.0/24" 
 }
-
+*/
 resource "aws_lb_target_group" "example" {
-  name_prefix      = "example-tg"
+  name_prefix      = "demo"
   port             = 80
   protocol         = "HTTP"
   target_type      = "instance"
